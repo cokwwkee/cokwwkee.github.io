@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs ================================================== -->
 	<meta charset="utf-8" />
 	<meta name="robots" content="index, follow" />
-	<title>Sweetly</title>
+	<title>Sweetly - Gallery</title>
     <meta name="keywords" content="wedding website,lovelymoments" />
     <meta name="description" content="" />
 	<meta name="author" content="Sweetly" />
@@ -26,8 +26,6 @@
     <link rel="stylesheet" href="/assets/styles/flexslider.css" />
     <link rel="stylesheet" href="/assets/styles/style.css" />
     <link rel="stylesheet" href="/assets/styles/layout.css" />
-    
-    <link rel="stylesheet" href="/assets/styles/camera.css" />
     
     <link rel="stylesheet" href="/assets/styles/color.css" />
     <link rel="stylesheet" href="/assets/styles/tags.css" />
@@ -59,13 +57,13 @@
                     <nav id="nav-wrap">
                         <ul id="topnav" class="sf-menu">
                             
-                            <li class="current"><a href="/index.html">Home</a></li>
+                            <li><a href="/index.html">Home</a></li>
                             
                             <li><a href="/about.html">About</a></li>
                             
                             <li><a href="/blog/index.html">Blog</a></li>
                             
-                            <li><a href="/gallery.html">Gallery</a></li>
+                            <li class="current"><a href="/gallery.html">Gallery</a></li>
                             
                             <li><a href="/quote.html">Quote</a></li>
                             
@@ -85,37 +83,20 @@
 <!-- END HEADER -->
 
         
-        <!-- SLIDER -->
-<div id="outerslider">
-    <section id="slider">
-        <div id="slideritems">
-            
-            <div class="slider-img" data-src="/media/profile/slider/slide1.jpg">
-                <div class="camera_caption fadeIn">
-                    <div class="slider-title"><a href="#">Wedding Flowers</a></div>
-                    <div class="slider-desc">Aliquam enim enim, pharetra in sodales at, interdum sit amet dui. <br />Nullam vulputate euismod urna non pharetra. Phasellus blandit mattis ipsum, ac laoreet lorem lacinia ligula.</div>
+                <!-- AFTERHEADER -->	                        
+        <div id="outerafterheader">
+        	<div class="container">
+            	<div class="row">
+                    <div id="afterheader" class="twelve columns">
+                        <div id="trapezoid">
+                            <h1 class="pagetitle">Gallery</h1>                    
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="slider-img" data-src="/media/profile/slider/slide2.jpg">
-                <div class="camera_caption fadeIn">
-                    <div class="slider-title"><a href="#">WELCOME to Sweetly</a></div>
-                    <div class="slider-desc">Aliquam enim enim, pharetra in sodales at, interdum sit amet dui. <br />Nullam vulputate euismod urna non pharetra. Phasellus blandit mattis ipsum, ac laoreet lorem lacinia ligula.</div>
-                </div>
-            </div>
-            
-            <div class="slider-img" data-src="/media/profile/slider/slide3.jpg">
-                <div class="camera_caption fadeIn">
-                    <div class="slider-title"><a href="#">I&#8217;m getting married</a></div>
-                    <div class="slider-desc">Aliquam enim enim, pharetra in sodales at, interdum sit amet dui. <br />Nullam vulputate euismod urna non pharetra. Phasellus blandit mattis ipsum, ac laoreet lorem lacinia ligula.</div>
-                </div>
-            </div>
-            
+            <div class="header-line"></div>
         </div>
-        <div class="clear"></div>
-    </section>
-</div>
-<!-- END SLIDER -->
+        <!-- END AFTERHEADER --> 
 
 
 <!-- MAIN CONTENT -->
@@ -125,18 +106,49 @@
             <section id="maincontent" class="twelve columns">
                 <section id="content">
 
-
                     
-                    <h3 class="widget-title">Gallery</h3>                      
+                    <!-- Begin Portfolio Nav -->
+                    <div id="filterlist">
+                        <span>Categories:</span>  
+                        <ul id="filter">
+                            <li class="current first"><a href="#" data-filter="*">Show All</a></li>
+                            
+                            <li><a href="#" class="gallery1" data-filter=".gallery1">Gallery 1</a></li>
+                            
+                            <li><a href="#" class="gallery2" data-filter=".gallery2">Gallery 2</a></li>
+                            
+                            <li><a href="#" class="gallery3" data-filter=".gallery3">Gallery 3</a></li>
+                            
+                        </ul> 
+                        <div class="clear"></div>
+                    </div> 
+                    <!-- End Portfolio Nav -->    
+                      
                     <!-- Begin Portfolio Items -->
                     <div class="row">
                     <div id="ts-portfolio">
                         
+                        <div class="item one_fourth columns alpha gallery1 gallery2" >
+                            <div class="ts-pf-img">
+                                <div class="frame">
+                                    <a class="pfzoom" href="/media/profile/gallery/full/pf10.jpg" data-rel=prettyPhoto[mixed] title="Our Wedding">
+                                    <span class="rollover"></span>
+                                    <img  src="/media/profile/gallery/full/pf10.jpg" alt="Our Wedding" />
+                                    </a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="ts-pf-text">
+                                <h3 class="pftitle"><a href="#" title="Our Wedding"><span>Our Wedding</span></a></h3>
+                                <div class="textcontainer">Maecenas nec nibh sem, vel ultricies tortor. Etiam id lectus eu nibh cursus blandit. Donec iaculis interdum sapien.</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
                         
                         <div class="item one_fourth columns alpha gallery1 gallery3" >
                             <div class="ts-pf-img">
                                 <div class="frame">
-                                    <a class="pfzoom" href="/media/profile/gallery/full/pf11.jpg" data-rel="prettyPhoto[mixed]" title="Our Wedding">
+                                    <a class="pfzoom" href="/media/profile/gallery/full/pf11.jpg" data-rel=prettyPhoto[mixed] title="Our Wedding">
                                     <span class="rollover"></span>
                                     <img  src="/media/profile/gallery/full/pf11.jpg" alt="Our Wedding" />
                                     </a>
@@ -150,11 +162,27 @@
                             <div class="clear"></div>
                         </div>
                         
+                        <div class="item one_fourth columns alpha gallery3" >
+                            <div class="ts-pf-img">
+                                <div class="frame">
+                                    <a class="pfzoom" href="/media/profile/gallery/full/pf8.jpg" data-rel=prettyPhoto[mixed] title="Our Wedding">
+                                    <span class="rollover"></span>
+                                    <img  src="/media/profile/gallery/full/pf8.jpg" alt="Our Wedding" />
+                                    </a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="ts-pf-text">
+                                <h3 class="pftitle"><a href="#" title="Our Wedding"><span>Our Wedding</span></a></h3>
+                                <div class="textcontainer">Maecenas nec nibh sem, vel ultricies tortor. Etiam id lectus eu nibh cursus blandit. Donec iaculis interdum sapien.</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
                         
                         <div class="item one_fourth columns alpha gallery1 gallery2" >
                             <div class="ts-pf-img">
                                 <div class="frame">
-                                    <a class="pfzoom" href="/media/profile/gallery/full/pf9.jpg" data-rel="prettyPhoto[mixed]" title="Our Wedding">
+                                    <a class="pfzoom" href="/media/profile/gallery/full/pf9.jpg" data-rel=prettyPhoto[mixed] title="Our Wedding">
                                     <span class="rollover"></span>
                                     <img  src="/media/profile/gallery/full/pf9.jpg" alt="Our Wedding" />
                                     </a>
@@ -168,11 +196,27 @@
                             <div class="clear"></div>
                         </div>
                         
+                        <div class="item one_fourth columns alpha gallery3" >
+                            <div class="ts-pf-img">
+                                <div class="frame">
+                                    <a class="pfzoom" href="/media/profile/gallery/full/pf2.jpg" data-rel=prettyPhoto[mixed] title="Our Wedding">
+                                    <span class="rollover"></span>
+                                    <img  src="/media/profile/gallery/full/pf2.jpg" alt="Our Wedding" />
+                                    </a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="ts-pf-text">
+                                <h3 class="pftitle"><a href="#" title="Our Wedding"><span>Our Wedding</span></a></h3>
+                                <div class="textcontainer">Maecenas nec nibh sem, vel ultricies tortor. Etiam id lectus eu nibh cursus blandit. Donec iaculis interdum sapien.</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
                         
                         <div class="item one_fourth columns alpha gallery1" >
                             <div class="ts-pf-img">
                                 <div class="frame">
-                                    <a class="pfzoom" href="/media/profile/gallery/full/pf3.jpg" data-rel="prettyPhoto[mixed]" title="Our Wedding">
+                                    <a class="pfzoom" href="/media/profile/gallery/full/pf3.jpg" data-rel=prettyPhoto[mixed] title="Our Wedding">
                                     <span class="rollover"></span>
                                     <img  src="/media/profile/gallery/full/pf3.jpg" alt="Our Wedding" />
                                     </a>
@@ -186,13 +230,63 @@
                             <div class="clear"></div>
                         </div>
                         
+                        <div class="item one_fourth columns alpha gallery3" >
+                            <div class="ts-pf-img">
+                                <div class="frame">
+                                    <a class="pfzoom" href="/media/profile/gallery/full/pf4.jpg" data-rel=prettyPhoto[mixed] title="Our Wedding">
+                                    <span class="rollover"></span>
+                                    <img  src="/media/profile/gallery/full/pf4.jpg" alt="Our Wedding" />
+                                    </a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="ts-pf-text">
+                                <h3 class="pftitle"><a href="#" title="Our Wedding"><span>Our Wedding</span></a></h3>
+                                <div class="textcontainer">Maecenas nec nibh sem, vel ultricies tortor. Etiam id lectus eu nibh cursus blandit. Donec iaculis interdum sapien.</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
                         
                         <div class="item one_fourth columns alpha gallery3" >
                             <div class="ts-pf-img">
                                 <div class="frame">
-                                    <a class="pfzoom" href="/media/profile/gallery/full/pf7.jpg" data-rel="prettyPhoto[mixed]" title="Our Wedding">
+                                    <a class="pfzoom" href="/media/profile/gallery/full/pf7.jpg" data-rel=prettyPhoto[mixed] title="Our Wedding">
                                     <span class="rollover"></span>
                                     <img  src="/media/profile/gallery/full/pf7.jpg" alt="Our Wedding" />
+                                    </a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="ts-pf-text">
+                                <h3 class="pftitle"><a href="#" title="Our Wedding"><span>Our Wedding</span></a></h3>
+                                <div class="textcontainer">Maecenas nec nibh sem, vel ultricies tortor. Etiam id lectus eu nibh cursus blandit. Donec iaculis interdum sapien.</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        
+                        <div class="item one_fourth columns alpha gallery1" >
+                            <div class="ts-pf-img">
+                                <div class="frame">
+                                    <a class="pfzoom" href="/media/profile/gallery/full/pf6.jpg" data-rel=prettyPhoto[mixed] title="Our Wedding">
+                                    <span class="rollover"></span>
+                                    <img  src="/media/profile/gallery/full/pf6.jpg" alt="Our Wedding" />
+                                    </a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="ts-pf-text">
+                                <h3 class="pftitle"><a href="#" title="Our Wedding"><span>Our Wedding</span></a></h3>
+                                <div class="textcontainer">Maecenas nec nibh sem, vel ultricies tortor. Etiam id lectus eu nibh cursus blandit. Donec iaculis interdum sapien.</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        
+                        <div class="item one_fourth columns alpha gallery1 gallery2" >
+                            <div class="ts-pf-img">
+                                <div class="frame">
+                                    <a class="pfzoom" href="/media/profile/gallery/full/pf5.jpg" data-rel=prettyPhoto[mixed] title="Our Wedding">
+                                    <span class="rollover"></span>
+                                    <img  src="/media/profile/gallery/full/pf5.jpg" alt="Our Wedding" />
                                     </a>
                                     <div class="clear"></div>
                                 </div>
@@ -209,7 +303,6 @@
                     <!-- End Portfolio Items -->
                     
 
-                
                 </section>
             </section>
             <div class="clear"></div>
@@ -217,135 +310,6 @@
     </div>
 </div>
 <!-- END MAIN CONTENT -->
-
-
-<!-- BOTTOM -->
-<div id="outerbottom">
-    <div class="container">
-        <div class="row">
-            <div id="bottom-sidebar" class="twelve columns">
-				<div class="widget-homebottom">
-                <h3 class="widget-title">Our Wedding Planner</h3>
-                <div class="ts-features ">
-                    <div class="row">
-                        
-                        <div class="columns fitem one_sixth">
-                            <div class="item-container">
-                                <a href="/#">
-                                    <div class="feature-img">
-                                        <div class="img-container">
-                                            <img width="45" height="45" src="/media/profile/planner/icon1.png"  alt="icon1" />
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="recent-text-wrap">
-                                    <h3 class="feature-title">Honeymoon <br/> Ideas</h3>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="columns fitem one_sixth">
-                            <div class="item-container">
-                                <a href="/#">
-                                    <div class="feature-img">
-                                        <div class="img-container">
-                                            <img width="45" height="45" src="/media/profile/planner/icon2.png"  alt="icon1" />
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="recent-text-wrap">
-                                    <h3 class="feature-title">Decoration<br/>Ideas</h3>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="columns fitem one_sixth">
-                            <div class="item-container">
-                                <a href="/#">
-                                    <div class="feature-img">
-                                        <div class="img-container">
-                                            <img width="45" height="45" src="/media/profile/planner/icon3.png"  alt="icon1" />
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="recent-text-wrap">
-                                    <h3 class="feature-title">Party<br/> Ideas</h3>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="columns fitem one_sixth">
-                            <div class="item-container">
-                                <a href="/#">
-                                    <div class="feature-img">
-                                        <div class="img-container">
-                                            <img width="45" height="45" src="/media/profile/planner/icon4.png"  alt="icon1" />
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="recent-text-wrap">
-                                    <h3 class="feature-title">Wedding<br/> Transport</h3>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="columns fitem one_sixth">
-                            <div class="item-container">
-                                <a href="/#">
-                                    <div class="feature-img">
-                                        <div class="img-container">
-                                            <img width="45" height="45" src="/media/profile/planner/icon5.png"  alt="icon1" />
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="recent-text-wrap">
-                                    <h3 class="feature-title">Wedding<br/> Menu</h3>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="columns fitem one_sixth">
-                            <div class="item-container">
-                                <a href="/#">
-                                    <div class="feature-img">
-                                        <div class="img-container">
-                                            <img width="45" height="45" src="/media/profile/planner/icon6.png"  alt="icon1" />
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="recent-text-wrap">
-                                    <h3 class="feature-title">Wedding<br/> Flowers</h3>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        
-
-                    	<div class="clear"></div>
-                    </div>
-                    
-                </div>
-                <div class="clear"></div>
-				</div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="clear"></div>
-<!-- END BOTTOM -->
-
-
 
         
         <!-- FOOTER -->
@@ -518,28 +482,6 @@ jQuery(window).load(function() {
 
 
 
-<!-- jQuery Camera Slider -->
-<script type="text/javascript" src="/assets/js/camera.min.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function() {
-	if(jQuery('#slideritems').length){
-		jQuery('#slideritems').camera({
-			height: '33.6%', /* to set the slider height */
-			fx: 'random', /* to set the slider effect */
-			autoAdvance: true,
-			pagination: true,
-			navigation:false,
-			navigationHover: false,
-			playPause: false,
-			thumbnails: false,
-			loader: 'none',
-			imagePath: '../images/'
-		});
-	}
-		
-});
-</script>
-
 
 
 <!-- jQuery PrettyPhoto -->
@@ -548,6 +490,34 @@ jQuery(document).ready(function() {
 <script type="text/javascript" src="/assets/js/jquery-easing-1.3.js"></script>
 
 
+
+<!-- jQuery Isotope -->
+<script type="text/javascript" src="/assets/js/jquery.isotope.min.js"></script>
+
+<script>
+function runisotope(){
+	$container = jQuery('#ts-portfolio');
+		$container.isotope({
+			itemSelector : '.item'
+		});
+
+	// filter items when filter link is clicked
+	jQuery('#filter li').click(function(){
+	jQuery('#filter li').removeClass('current');
+		jQuery(this).addClass('current');
+			var selector = jQuery(this).find('a').attr('data-filter');
+			$container.isotope({ filter: selector });
+		return false;
+	}); 
+};
+jQuery(window).load(function(){
+	runisotope();
+});
+
+jQuery(window).smartresize(function(){
+	runisotope();
+});
+</script>
 
 
 

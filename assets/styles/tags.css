@@ -1,0 +1,107 @@
+/* Page conent */
+.summer-page-content {
+  margin: 0 auto;
+  padding: 0 0 5rem; }
+  .summer-page-content > div:not(.summer-page-title) {
+    margin: 0 auto;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem; }
+    .summer-page-content > div:not(.summer-page-title) a, .summer-page-content > div:not(.summer-page-title) code {
+      color: #907c73; }
+    .summer-page-content > div:not(.summer-page-title) ul, .summer-page-content > div:not(.summer-page-title) ol {
+      padding-left: 1.25rem;
+      font-size: 1.125rem; }
+    .summer-page-content > div:not(.summer-page-title) h1, .summer-page-content > div:not(.summer-page-title) h2, .summer-page-content > div:not(.summer-page-title) h3, .summer-page-content > div:not(.summer-page-title) h4, .summer-page-content > div:not(.summer-page-title) h5, .summer-page-content > div:not(.summer-page-title) h6 {
+      font-weight: bold; }
+    .summer-page-content > div:not(.summer-page-title) h1, .summer-page-content > div:not(.summer-page-title) h2, .summer-page-content > div:not(.summer-page-title) h3, .summer-page-content > div:not(.summer-page-title) h4, .summer-page-content > div:not(.summer-page-title) h5, .summer-page-content > div:not(.summer-page-title) h6, .summer-page-content > div:not(.summer-page-title) ul, .summer-page-content > div:not(.summer-page-title) ol, .summer-page-content > div:not(.summer-page-title) blockquote, .summer-page-content > div:not(.summer-page-title) pre, .summer-page-content > div:not(.summer-page-title) hr {
+      max-width: 56.25rem;
+      margin-left: auto;
+      margin-right: auto; }
+    .summer-page-content > div:not(.summer-page-title) p {
+      margin: 0 auto 2em auto;
+      max-width: 56.25rem;
+      font-size: 1.125rem; 
+      text-align: justify; }
+      .summer-page-content > div:not(.summer-page-title) p:first-child {
+        font-size: 1.375rem;
+        font-weight: 300; }
+        @media only screen and (min-width: 40.063em) {
+          .summer-page-content > div:not(.summer-page-title) p:first-child {
+            font-size: 1.625rem; } }
+      .summer-page-content > div:not(.summer-page-title) p.with-image {
+        text-align: center;
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
+        max-width: 75rem; }
+
+.summer-page-content > div > h2 {
+  font-style: normal;
+  color: #222;
+  text-rendering: optimizeLegibility;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.7rem;
+  margin-bottom: 0.4rem;
+}
+
+.tag-box {
+  padding: 4px 0;
+  margin: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.tag-box:after, .tag-box:before {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.tag-box.inline li {
+  float: left;
+  font-size: 14px;
+  line-height: 2.5;
+}
+
+.tag-box a {
+  padding: 4px 6px;
+  margin: 2px;
+  text-decoration: none;
+  border: 0.0625rem solid black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.tag-box a span {
+  font-size: 10px;
+  vertical-align: super;
+  color: black;
+}
+
+.post-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.post-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.post-list li:after, .post-list li:before {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.post-list .entry-date {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.post-list a>span {
+  float: right;
+}

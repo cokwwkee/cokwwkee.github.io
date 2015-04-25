@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs ================================================== -->
 	<meta charset="utf-8" />
 	<meta name="robots" content="index, follow" />
-	<title>Sweetly - Page not found</title>
+	<title>Sweetly - Contact</title>
     <meta name="keywords" content="wedding website,lovelymoments" />
     <meta name="description" content="" />
 	<meta name="author" content="Sweetly" />
@@ -65,7 +65,7 @@
                             
                             <li><a href="/quote.html">Quote</a></li>
                             
-                            <li><a href="/contact.html">Contact</a></li>
+                            <li class="current"><a href="/contact.html">Contact</a></li>
                             
                         </ul><!-- topnav -->
                         <div class="clear"></div>
@@ -87,7 +87,7 @@
             	<div class="row">
                     <div id="afterheader" class="twelve columns">
                         <div id="trapezoid">
-                            <h1 class="pagetitle">Page not found</h1>                    
+                            <h1 class="pagetitle">Contact</h1>                    
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,52 @@
         <div class="row">
             <section id="maincontent" class="twelve columns">
                 <section id="content">
-<img src="/assets/images/404.png" alt="404" />
+
+                    <iframe style="width: 100%; height: 305px; border: 0pt none; margin: 0px 0px 50px; display: block;" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Jalan+Kemanggisan+Utama,+Jakarta,+Indonesia&amp;sll=37.0625,-95.677068&amp;sspn=46.092115,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Jalan+Kemanggisan+Utama,+Jakarta+Barat,+Jakarta,+Indonesia&amp;ll=-6.189793,106.7908&amp;spn=0.016639,0.034246&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+                    
+                    <div class="row">
+                        <div class="three columns">
+                            <h2>Contact Info</h2>               
+                            <div class="text-block contact-info">
+                                <p>Nascetur ridiculus mus. Aliquam est odio, sagittis vel tortor id, laoreet volutpat dui. Vestibulum eget sem et mi elementum tristique.</p>
+                                <p><strong>Sweetly</strong><br>
+                                 3569 Miami Road,<br/>  LA, M09 77R<br/> </p>
+                                <p><strong>Telephone:&nbsp;</strong>+1 800 325 2564<br/>
+                            <strong>Fax:&nbsp;</strong>+1 800 325 2564<br/>
+                            <strong>Email:&nbsp;</strong>mail@sweetly.com<br/>
+                            <strong>Website:&nbsp;</strong>www.sweetly.com</p>
+                            </div>
+                        </div>
+                        <div class="nine columns">
+                            <div id="contactform">
+                                
+                                <form id="contact" action="#">
+                                    <fieldset>
+                                    <span class="error" id="name_error">Please enter name !</span>
+                                    <span class="error" id="email_error">Please enter email address !</span>
+                                    <span class="error" id="email_error2">Please enter valid email address !</span>
+                                    <span class="error" id="msg_error">Please enter message !</span>
+                                    <div class="row">
+                                    <div class="one_third columns">
+                                    <input type="text" name="name" id="name" size="50" value="Name" class="text-input" onblur="if (this.value == ''){this.value = 'Name'; }" onfocus="if (this.value == 'Name') {this.value = ''; }" />
+                                    </div>
+                                    <div class="one_third columns">
+                                    <input type="text" name="email" id="email" size="50" value="Email" class="text-input" onblur="if (this.value == ''){this.value = 'Email'; }" onfocus="if (this.value == 'Email') {this.value = ''; }" />
+                                    </div>
+                                    <div class="one_third columns">
+                                    <input type="text" name="subject" id="subject"  value="Subject" class="text-input" onblur="if (this.value == ''){this.value = 'Subject'; }" onfocus="if (this.value == 'Subject') {this.value = ''; }" />
+                                    </div>
+                                    </div>
+                                    <textarea cols="60" rows="10" name="msg" id="msg" class="text-input">Message</textarea>
+                                    <br />
+                                    <input type="submit" name="submit" class="button mini" id="submit_btn" value="Submit"/><br class="clear" />
+                                    </fieldset>
+                                </form>
+                                
+                            </div><!-- end contactform -->  
+                        </div>
+                    </div>
+
 
                 </section>
             </section>
@@ -289,6 +334,8 @@ jQuery(window).load(function() {
 
 
 
+
+<script type="text/javascript" src="/assets/js/contact.js"></script>
 
 
 
